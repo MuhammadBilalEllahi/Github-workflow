@@ -9,9 +9,9 @@ on:
       - main
 
 jobs:
-  event_triger:
-    runs-on: ubuntu_latest
+  event_triger_Job:
+    runs-on: ubuntu-latest
     steps:
-      - name: "Way to event"
+      - name: "Way to event (shows on heading)"
         run: echo "Hi"
 
