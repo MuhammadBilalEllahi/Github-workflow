@@ -1,0 +1,17 @@
+name: Multiple Events
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  event_triger:
+    runs-on: ubuntu_latest
+    steps:
+      - name: "Way to event"
+        run: echo "Hi"
+
