@@ -1,0 +1,23 @@
+name: Manual WorkFlow
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Write Your Name Here'
+        required: true
+        type: string
+      greeting:
+        description: 'type of greeting'
+        required: true
+        type: string
+
+
+jobs: 
+  greet_user:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do Greeting
+        run:  |
+          echo  "${{inputs.greeting}}, ${{inputs.name}}"
+        
